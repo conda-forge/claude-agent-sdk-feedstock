@@ -1,5 +1,5 @@
 context:
-  version: "0.1.28"
+  version: 0.1.29
 
 package:
   name: claude-agent-sdk
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/claude-agent-sdk/claude_agent_sdk-${{ version }}.tar.gz
-  sha256: 374a25b1a7744ba1ebd72d758011a6b25d5aaf687cd8ed611ff31f0c335e460b
+  sha256: ece32436a81fc015ca325d4121edeb5627ae9af15b5079f7b42d5eda9dcdb7a3
 
 build:
   noarch: python
@@ -23,8 +23,7 @@ requirements:
     - anyio >=4.0.0
     - mcp >=0.1.0
     - python >=${{ python_min }}
-    - typing-extensions >=4.0.0
-
+    - typing_extensions >=4.0.0
 tests:
   - python:
       imports:
@@ -46,7 +45,7 @@ tests:
 
 about:
   homepage: https://github.com/anthropics/claude-agent-sdk-python
-  summary: 'Python SDK for Claude Agent.'
+  summary: Python SDK for Claude Agent.
   description: Python SDK for Claude Agent.
   license: MIT
   license_file: LICENSE
