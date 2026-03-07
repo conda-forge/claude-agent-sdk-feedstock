@@ -1,5 +1,5 @@
 context:
-  version: "0.1.47"
+  version: "0.1.48"
 
 package:
   name: claude-agent-sdk
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/claude-agent-sdk/claude_agent_sdk-${{ version }}.tar.gz
-  sha256: b154a49602f0bc10087bd85668aedf2bd731426fed51f9ea2b7780926ea1933d
+  sha256: ee294d3f02936c0b826119ffbefcf88c67731cf8c2d2cb7111ccc97f76344272
 
 build:
   noarch: python
