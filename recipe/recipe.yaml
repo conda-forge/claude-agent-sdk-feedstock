@@ -1,5 +1,5 @@
 context:
-  version: "0.1.81"
+  version: 0.2.82
 
 package:
   name: claude-agent-sdk
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/claude-agent-sdk/claude_agent_sdk-${{ version }}.tar.gz
-  sha256: 9a3e873c99cd98b2e11ae5e65fd250f38ea192c3a8ddd117ed69a10bbf2b913b
+  sha256: 3e907b7d2bf52a5917d96a3ce336b8aa5546ea31e29ce826a7f346622cf7f4bf
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - anyio >=4.0.0
-    - mcp >=1.19.0
+    - mcp >=1.23.0
     - python >=${{ python_min }}
     - typing_extensions >=4.0.0
     - sniffio >=1.0.0
