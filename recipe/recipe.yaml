@@ -1,13 +1,13 @@
 context:
-  version: "0.2.108"
+  version: "0.2.109"
 
 package:
   name: claude-agent-sdk
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/c9/35/34b602015ebff64e5d39a0bb481679a4dd0a474d4c0afc5d3ac946b82af3/claude_agent_sdk-${{ version }}.tar.gz
-  sha256: 65bbb67593570d5752f596af71743ed9063e08116b847cd4cd3c15d86ee392b2
+  url: https://files.pythonhosted.org/packages/b3/60/84d2f4f853bcf54a95fcbdfef7ef583066a40325dbe7b15e2aa5ddb08031/claude_agent_sdk-${{ version }}.tar.gz
+  sha256: 475654439ad6c27e4f57bd97605727275ed7c9911e51eb6fbf0f45410406a176
 
 build:
   noarch: python
