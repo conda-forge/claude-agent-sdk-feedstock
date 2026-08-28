@@ -1,13 +1,13 @@
 context:
-  version: "0.2.145"
+  version: "0.2.146"
 
 package:
   name: claude-agent-sdk
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/2e/af/fe4d108fd6ee3d2dc70b3f54298e37a712e38ed34f69dfd37d3bb304c5d8/claude_agent_sdk-${{ version }}.tar.gz
-  sha256: 1eb929472b6935cbbe9d4eb3e88490a47707ce59b3b275db91638d29f90bc31f
+  url: https://files.pythonhosted.org/packages/46/08/a79f73aad2156f4518ae6e0fffbcdb403cd5347d62b994b005a0c9bb12fb/claude_agent_sdk-${{ version }}.tar.gz
+  sha256: 9e402548466018421cfd0725a7601e14d9e3e879276a6a4a877c5a2ff6633546
 
 build:
   noarch: python
@@ -31,6 +31,9 @@ tests:
       imports:
         - claude_agent_sdk
       pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
   - script: |
       python -m pytest tests/ -v || true
